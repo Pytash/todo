@@ -8,8 +8,9 @@ function Header() {
             <h1>TodoList</h1>
             <ul className='nav'>
                 <li role='presentation' className='active'><Link style={linkStyle} to='/'>Home</Link></li>
-                <li role='presentation' className='active'><Link style={linkStyle} to='/about'>About</Link></li>
                 <li role='presentation' className='active'><Link style={linkStyle} to='/profile'>Profile</Link></li>
+                <li role='presentation' className='active'><Link style={linkStyle} to='/notes'>Notes</Link></li>
+                <li role='presentation' className='active'><Link style={linkStyle} to='/about'>About</Link></li>
             </ul>
             {/* <Link style={linkStyle} to="/">Home</Link> | <Link style={linkStyle} to="/about">About</Link> */}
         </header>

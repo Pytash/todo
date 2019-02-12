@@ -6,6 +6,7 @@ import Header from './components/layout/Header';
 import AddTodo from './components/AddTodo';
 import About from './components/Pages/About';
 import Profile from './components/Pages/Profile';
+import Notes from './components/Pages/Notes';
 //import uuid from 'uuid';
 import axios from 'axios';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
@@ -56,6 +57,7 @@ class App extends Component {
             )} />
             <Route path="/about" component={About} />
             <Route path='/profile' component={Profile} />
+            <Route path='/notes' component={Notes} />
           </div>
         </div>
       </Router>
