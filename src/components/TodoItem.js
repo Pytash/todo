@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
+import './Style/TodoItem.css';
 
 
 export class TodoItem extends Component {
@@ -19,7 +20,7 @@ export class TodoItem extends Component {
     const {id, title} = this.props.todo;
     return (
       <div style={this.getStyle()}>
-        <p>
+        <p className='text'>
             <input type="checkbox" onChange={this.props.markComplete.bind(this, id)}/> {' '}
             {title}
             <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>x</button>
